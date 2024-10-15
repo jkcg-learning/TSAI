@@ -6,6 +6,13 @@ Website Time Tracker is a Chrome extension that helps users monitor and analyze 
 
 This project was created as part of an exploration into Cursor.com, an innovative AI-powered code editor that's reshaping the landscape of programming.
 
+## Screenshots
+
+### Extension Popup
+![Extension Popup](assets/app1.png)
+![Time Tracking Sample](assets/app2.png)
+*The interface of the Website Time Tracker extension*
+
 ## About Cursor and This Project
 
 This extension was developed using Cursor (cursor.com), an AI-augmented code editor that's pushing the boundaries of how we write and understand code. Cursor integrates powerful language models to assist in coding, making the development process more intuitive and efficient.
