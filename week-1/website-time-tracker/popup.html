@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Time Tracker</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="chart.js"></script>
+</head>
+<body>
+  <h1>Website Time Tracker</h1>
+  
+  <div class="tab-container">
+    <button class="tab-button active" data-tab="daily">Daily</button>
+    <button class="tab-button" data-tab="category">Categories</button>
+    <button class="tab-button" data-tab="custom">Custom Categories</button>
+  </div>
+
+  <div id="daily" class="tab-content active">
+    <h2>Today's Activity</h2>
+    <div id="dailyList"></div>
+    <canvas id="dailyChart"></canvas>
+  </div>
+
+  <div id="category" class="tab-content">
+    <h2>Category Breakdown</h2>
+    <canvas id="categoryChart"></canvas>
+  </div>
+
+  <div id="custom" class="tab-content">
+    <h2>Custom Categories</h2>
+    <form id="addCategoryForm">
+      <input type="text" id="categoryName" placeholder="Category name" required>
+      <input type="text" id="domainList" placeholder="Domains (comma-separated)" required>
+      <button type="submit">Add Category</button>
+    </form>
+    <div id="categoryList"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
