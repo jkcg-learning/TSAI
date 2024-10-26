@@ -162,3 +162,7 @@ cython_debug/
 #.idea/
 
 .DS_Store
+
+mac_keyboard.py
+learning.py
+OOP.py

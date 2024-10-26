@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Showcase</h1>
+        </header>
+        <main>
+            <div class="input-area">
+                <div class="box">
+                    <h2>Select an Animal</h2>
+                    <form id="animal-form">
+                        <div class="radio-group">
+                            <input type="radio" id="cat" name="animal" value="cat">
+                            <label for="cat">Cat</label>
+                            <input type="radio" id="dog" name="animal" value="dog">
+                            <label for="dog">Dog</label>
+                            <input type="radio" id="elephant" name="animal" value="elephant">
+                            <label for="elephant">Elephant</label>
+                        </div>
+                        <button type="button" onclick="handleAnimalSelection()">Show Animal</button>
+                    </form>
+                </div>
+                <div class="box">
+                    <h2>Upload an Image</h2>
+                    <form id="upload-form">
+                        <input type="file" id="file-upload" accept="image/*">
+                        <button type="button" onclick="handleFileUpload()">Show Image</button>
+                    </form>
+                </div>
+            </div>
+            <div class="display-area">
+                <h2>Result</h2>
+                <div id="image-container"></div>
+                <div id="info-container"></div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
